@@ -8,46 +8,59 @@
   <title>Document</title>
 </head>
 
- <!-- Botão que leva o usuário de volta para o topo da página -->
- <button id="scrollToTopButton" onclick="scrollToTop()">Topo</button>
+<!-- Botão que leva o usuário de volta para o topo da página -->
+<button id="scrollToTopButton" onclick="scrollToTop()">Topo</button>
 
- <script>
-   // Função JavaScript para rolar suavemente para o topo da página
-   function scrollToTop() {
-     window.scrollTo({
-       top: 0,
-       behavior: 'smooth' // Rola suavemente para o topo
-     });
-   }
- </script>
+<script>
+  // Função JavaScript para rolar suavemente para o topo da página
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Rola suavemente para o topo
+    });
+  }
+</script>
 
 <body>
   <div class="container">
+    <!-- Navegação do menu -->
     <nav class="menu">
-      <div class="logo">Sobre Cats...</div>
+      <div class="logo">Sobre Cats...</div> <!-- Logotipo do site -->
 
+      <!-- Lista de itens do menu -->
       <ul class="menu-items">
-        <li><a href="#">Ínico</a></li>
-        <li><a href="#main2">Fatos</a></li>
-        <li><a href="#content6">Rações</a></li>
+        <li><a href="#">Ínico</a></li> <!-- Link para a página inicial -->
+        <li><a href="#main2">Fatos</a></li> <!-- Link para a seção de fatos -->
+        <li><a href="#content6">Rações</a></li> <!-- Link para a seção sobre rações -->
       </ul>
-
     </nav>
+
+    <!-- Conteúdo principal da seção 1 -->
     <main class="mian1">
-      <img class="gato-main" src="./images/gato1.jpg" alt="Gato Header">
+      <img class="gato-main" src="./images/gato1.jpg" alt="Gato Header"> <!-- Imagem principal do gato -->
     </main>
 
     <aside class="aside1">
+      <!-- Imagem de um gato adorável -->
       <img class="gato-aside" src="./images/gato5.jpg" alt="">
+
+      <!-- Título da seção -->
       <h3>Gatinhos</h3>
+
+      <!-- Subtítulo da seção -->
       <h5>Mande um e-mail ツ</h6>
+
+        <!-- Parágrafo de boas-vindas e introdução à seção -->
         <p>Bem-vindo ao fascinante mundo dos gatos! Aqui, celebramos a graça e a curiosidade desses adoráveis felinos
           que conquistaram nossos corações. Nossa paixão por gatos vai além das palavras, e estamos dedicados a
-          compartilhar histórias e conhecimentos sobre essas criaturas incríveis.
+          compartilhar histórias e conhecimentos sobre essas criaturas incríveis.</p>
+
+        <!-- Parágrafo de descrição da missão -->
         <p>Descubra fatos fascinantes, explore raças, aprenda sobre cuidados e nutrição, e mergulhe no universo
           encantador dos gatos conosco. Nossa missão é tornar a vida dos gatos e de seus cuidadores mais feliz e
           saudável. Junte-se a nós nessa jornada felina!</p>
-        </p>
+
+        <!-- Ícones de mídias sociais -->
         <div class="icon-medias">
           <img class="icons" src="./images/facebook-icon.png" alt="">
           <img class="icons" src="./images/youtube-icon.png" alt="">
@@ -62,10 +75,12 @@
     <section id="content3"><img class="gato-content" src="./images/gato4.jpg" alt=""></section>
 
     <main id="main2" class="mian2">
+      <!-- Imagem de cabeçalho da seção "main2" -->
       <img class="gato-main2" src="./images/catheader2.jpg" alt="Gato Header">
     </main>
 
     <section class="content4">
+      <!-- Título e lista de fatos interessantes sobre gatos -->
       <h2>Fatos Interessantes sobre Gatos</h2>
       <ul>
         <li>Gatos têm cerca de 32 músculos em cada orelha, permitindo que eles girem suas orelhas 180 graus.</li>
@@ -76,6 +91,7 @@
     </section>
 
     <section class="content5">
+      <!-- Título e lista de fatos interessantes sobre gatos -->
       <h2>Mais Fatos sobre Gatos</h2>
       <ul>
         <li>Gatos têm a habilidade de pular até seis vezes a altura do corpo.</li>
@@ -85,34 +101,47 @@
       </ul>
     </section>
 
-
     <aside class="aside2">
+      <!-- Seção "aside2" para informações sobre raças de gatos -->
       <div class="aside-content">
         <h3>Conheça Nossos Amigos Peludos</h3>
         <p>
-          Descubra mais sobre as raças de gatos mais populares e aprenda sobre suas personalidades, necessidades especiais e características únicas. Cada raça tem sua própria história e encanto distinto.
+          Descubra mais sobre as raças de gatos mais populares e aprenda sobre suas personalidades, necessidades
+          especiais e características únicas. Cada raça tem sua própria história e encanto distinto.
         </p>
       </div>
       <div class="aside-image">
+        <!-- Imagem de um gato fofo -->
         <img src="./images/cutecat.jpg" alt="Gato Fofo">
       </div>
     </aside>
 
     <section id="content6" class="content6">
+      <!-- Seção "content6" sobre comida para gatos -->
       <div class="food-image">
+        <!-- Imagem de comida para gatos -->
         <img src="./images/food1.jpg" alt="Comida para Gatos">
       </div>
       <div class="food-content">
+        <!-- Título e informações sobre comida para gatos -->
         <h2>Comida para Gatos</h2>
-        <p>Uma alimentação equilibrada é fundamental para a saúde e o bem-estar do seu gato. Descubra dicas sobre os tipos de comida mais adequados, como criar uma dieta balanceada e oferecer opções saborosas para seu felino.</p>
-        <p>A variedade de alimentos para gatos é ampla, e a escolha certa pode influenciar na energia, vitalidade e longevidade do seu companheiro felino. Além disso, lembre-se sempre de manter água fresca disponível.</p>
+        <p>
+          Uma alimentação equilibrada é fundamental para a saúde e o bem-estar do seu gato. Descubra dicas sobre os
+          tipos de comida mais adequados, como criar uma dieta balanceada e oferecer opções saborosas para seu felino.
+        </p>
+        <p>
+          A variedade de alimentos para gatos é ampla, e a escolha certa pode influenciar na energia, vitalidade e
+          longevidade do seu companheiro felino. Além disso, lembre-se sempre de manter água fresca disponível.
+        </p>
       </div>
     </section>
-    
 
     <footer>
+      <!-- Rodapé do site -->
       <div class="columns">
+        <!-- Colunas no rodapé -->
         <div class="first-column">
+          <!-- Primeira coluna de links -->
           <ul>
             <li>Raças</li>
             <li>Rações</li>
@@ -122,6 +151,7 @@
           </ul>
         </div>
         <div class="second-column">
+          <!-- Segunda coluna de links -->
           <ul>
             <li>Dicas</li>
             <li>Rank de inteligência</li>
@@ -129,6 +159,7 @@
           </ul>
         </div>
         <div class="third-column">
+          <!-- Terceira coluna de informações de contato -->
           <ul>
             <li>gatoslindos@gmail.com</li>
             <li>Telefone: (19) 99999-99999</li>
@@ -136,6 +167,7 @@
         </div>
       </div>
       <div class="row-footer">
+        <!-- Linha adicional no rodapé -->
         <p>©2023 Sobre Gatos. Todos os direitos reservados.</p>
       </div>
     </footer>
@@ -151,6 +183,7 @@
       }
     });
   </script>
+
 
 </body>
 

@@ -1,19 +1,26 @@
+/* Definição de variáveis globais */
 :root {
   --main-radius: 15px;
+  /* Raio de borda padrão */
   --main-padding: 5px;
+  /* Preenchimento padrão */
 }
 
+/* Configuração de rolagem suave para a página */
 html {
   scroll-behavior: smooth;
 }
 
+/* Estilos para o corpo da página */
 body {
   max-width: 1200px;
+  /* Largura máxima da página */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Estilos para a barra de navegação */
 nav {
   background-color: rgb(145, 144, 144);
   grid-area: nav;
@@ -25,7 +32,8 @@ nav {
 .menu {
   display: flex;
   align-items: center;
-  justify-content: space-around; /* Adicionado para centralizar horizontalmente */
+  justify-content: space-around;
+  /* Centraliza horizontalmente */
   padding: 8px;
 }
 
@@ -42,7 +50,8 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center; /* Adicionado para centralizar horizontalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
   gap: 20px;
 }
 
@@ -62,11 +71,14 @@ nav {
   color: #333;
   font-weight: bold;
   font-size: 18px;
-  transition: color 0.3s; /* Efeito de transição de cor ao passar o mouse */
+  transition: color 0.3s;
+  /* Efeito de transição de cor ao passar o mouse */
 }
 
+/* Estilos de realce ao passar o mouse nos links do menu */
 .menu-items li a:hover {
-  color: #ff9900; /* Cor de destaque ao passar o mouse */
+  color: #ff9900;
+  /* Cor de destaque ao passar o mouse */
 }
 
 /* Estilos para o botão de rolagem para o topo */
@@ -74,16 +86,19 @@ nav {
   position: fixed;
   bottom: 20px;
   right: 80px;
-  display: none; /* Inicialmente oculto */
+  display: none;
+  /* Inicialmente oculto */
   background-color: #333;
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  z-index: 1000; /* Certifique-se de que o botão esteja acima de outros elementos */
+  z-index: 1000;
+  /* Certifica-se de que o botão esteja acima de outros elementos */
 }
 
+/* Efeito de realce ao passar o mouse no botão de rolagem */
 #scrollToTopButton:hover {
   background-color: #555;
 }
@@ -93,11 +108,13 @@ body.scrolled #scrollToTopButton {
   display: block;
 }
 
+
+/* Configuração do layout principal usando CSS Grid */
 .container {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1.2fr;
+  height: 100vh; /* Define a altura da grade como 100% da altura da janela de visualização */
+  grid-template-columns: 1.3fr 1fr 1fr 1fr; /* Divide as colunas em proporções */
+  grid-template-rows: 0.4fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1.2fr; /* Divide as linhas em proporções */
   grid-template-areas:
     "aside nav nav nav"
     "aside main main main"
@@ -106,258 +123,296 @@ body.scrolled #scrollToTopButton {
     "content4 content4 content4 aside2"
     "content5 content5 content5 aside2"
     "content6 content6 content6 content6"
-    "footer footer footer footer";
-  grid-gap: 0.6rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  color: #000000;
-  text-align: center;
+    "footer footer footer footer"; /* Define as áreas da grade com nomes */
+  grid-gap: 0.6rem; /* Espaçamento entre as células da grade */
+  font-family: Arial, Helvetica, sans-serif; /* Fonte padrão para o texto */
+  font-size: 1em; /* Tamanho de fonte padrão */
+  color: #000000; /* Cor de texto padrão */
+  text-align: center; /* Alinhamento de texto padrão */
 }
 
+/* Estilos para a seção principal do cabeçalho */
 .mian1 {
-  background-color: rgb(75, 75, 75);
-  grid-area: main;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  background-color: rgb(75, 75, 75); /* Cor de fundo */
+  grid-area: main; /* A seção ocupa a área 'main' na grade */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  padding-top: var(--main-padding); /* Preenchimento personalizado no topo */
 }
 
+/* Estilos para a segunda seção principal */
 .mian2 {
-  grid-area: main2;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  grid-area: main2; /* A seção ocupa a área 'main2' na grade */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  padding-top: var(--main-padding); /* Preenchimento personalizado no topo */
 }
 
+/* Estilos para imagens na seção principal */
 .gato-main {
   max-width: 100%;
-  border-radius: var(--main-radius);
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ajuste da imagem para preencher o contêiner */
 }
 
+/* Estilos para imagens nas seções de conteúdo */
 .gato-content {
   max-width: 100%;
-  border-radius: var(--main-radius);
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
   height: 100%;
-  border: 3px solid black;
-  object-fit: cover;
+  border: 3px solid black; /* Borda com 3px de espessura e cor preta */
+  object-fit: cover; /* Ajuste da imagem para preencher o contêiner */
 }
 
 /* Estilos para a primeira área de conteúdo */
-#content1, #content2, #content3 {
-  background-color: rgb(145, 144, 144);
-  border-radius: var(--main-radius);
-  padding: 20px;
+#content1,
+#content2,
+#content3 {
+  background-color: rgb(145, 144, 144); /* Cor de fundo */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  padding: 20px; /* Preenchimento interno */
 }
+
+/* Estilos para a primeira área de conteúdo */
 #content1 {
-  grid-area: content1;
+  grid-area: content1; /* A seção ocupa a área 'content1' na grade */
 }
 
 /* Estilos para a segunda área de conteúdo */
 #content2 {
-  grid-area: content2;
+  grid-area: content2; /* A seção ocupa a área 'content2' na grade */
 }
 
 /* Estilos para a terceira área de conteúdo */
 #content3 {
-  grid-area: content3;
+  grid-area: content3; /* A seção ocupa a área 'content3' na grade */
 }
 
+/* Estilos para a imagem do gato na seção aside */
 .gato-aside {
-  border-radius: 50%;
-  width: 150px;
+  border-radius: 50%; /* Borda circular */
+  width: 150px; 
   height: 150px;
   margin-top: 20px;
   border: 3px solid black;
 }
 
+/* Estilos para a seção aside1 */
 .aside1 {
   background-color: rgb(145, 144, 144);
-  grid-area: aside;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  grid-area: aside; /* A seção ocupa a área 'aside' na grade */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  padding-top: var(--main-padding); /* Preenchimento personalizado no topo */
 }
 
+/* Estilos para o texto na seção aside1 */
 .aside1 p {
-  text-align: justify;
-  padding: 0 30px;
+  text-align: justify; /* Alinhamento do texto */
+  padding: 0 30px; /* Preenchimento interno */
 }
 
+/* Estilos para os ícones */
 .icons {
-  padding-top: 10px;
-  width: 15%;
+  padding-top: 10px; /* Espaçamento superior */
+  width: 15%; /* Largura dos ícones */
 }
 
+/* Estilos para o grupo de ícones */
 .icon-medias {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 30px;
+  display: flex; /* Exibe os ícones em linha */
+  justify-content: space-around; /* Espaçamento entre os ícones */
+  padding: 0 30px; /* Preenchimento interno */
 }
 
+/* Estilos para a imagem do gato na segunda seção principal */
 .gato-main2 {
-  max-width: 100%;
-  border-radius: var(--main-radius);
-  height: 100%;
-  object-fit: contain;
+  max-width: 100%; /* Largura máxima de imagem */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  height: 100%; /* Altura da imagem */
+  object-fit: contain; /* Ajuste da imagem */
 }
 
+/* Estilos para a seção content4 */
 .content4 {
-  grid-area: content4;
-  background-color: rgb(145, 144, 144);
-  border-radius: var(--main-radius);
-  padding: 20px;
+  grid-area: content4; /* A seção ocupa a área 'content4' na grade */
+  background-color: rgb(145, 144, 144); /* Cor de fundo */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  padding: 20px; /* Preenchimento interno */
 }
 
+/* Estilos para o título na seção content4 */
 .content4 h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 24px; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Margem inferior */
 }
 
+/* Estilos para a lista na seção content4 */
 .content4 ul {
-  list-style: disc;
-  padding-left: 20px;
-  color: #fff
+  list-style: disc; /* Estilo de marcadores com discos */
+  padding-left: 20px; /* Recuo à esquerda */
+  color: #fff;
 }
 
+/* Estilos para os itens da lista na seção content4 */
 .content4 li {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Margem inferior */
 }
 
+/* Estilos para a seção content5 */
 .content5 {
-  grid-area: content5;
-  background-color: rgb(145, 144, 144);
-  border-radius: var(--main-radius);
-  padding: 20px;
+  grid-area: content5; /* A seção ocupa a área 'content5' na grade */
+  background-color: rgb(145, 144, 144); /* Cor de fundo */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  padding: 20px; /* Preenchimento interno */
 }
 
+/* Estilos para o título na seção content5 */
 .content5 h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
+/* Estilos para a lista na seção content5 */
 .content5 ul {
-  list-style: disc;
-  padding-left: 20px;
-  color: #fff
+  list-style: disc; /* Estilo de marcadores com discos */
+  padding-left: 20px; /* Recuo à esquerda */
+  color: #fff; /* Cor do texto */
 }
 
+/* Estilos para os itens da lista na seção content5 */
 .content5 li {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Margem inferior */
 }
 
+/* Estilos para a seção aside2 */
 .aside2 {
   background-color: rgb(145, 144, 144);
-  grid-area: aside2;
+  grid-area: aside2; /* A seção ocupa a área 'aside2' na grade */
   border-radius: var(--main-radius);
   padding: var(--main-padding);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  display: flex; /* Exibe os elementos como flex */
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  flex-direction: column; /* Define a direção dos elementos como coluna */
 }
 
+/* Estilos para o conteúdo dentro de aside2 */
 .aside-content {
-  flex: 1;
+  flex: 1; /* Ocupa todo o espaço disponível na coluna */
 }
 
+/* Estilos para o título na seção aside2 */
 .aside-content h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Margem inferior */
 }
 
+/* Estilos para o texto na seção aside2 */
 .aside-content p {
-  text-align: justify;
+  text-align: justify; /* Alinhamento do texto */
   color: #fff;
-  padding: 0 10px;
+  padding: 0 10px; /* Preenchimento interno */
 }
 
+/* Estilos para a imagem na seção aside2 */
 .aside-image {
-  flex: 1;
-  text-align: center;
+  flex: 1; /* Ocupa todo o espaço disponível na coluna */
+  text-align: center; /* Alinhamento do texto ao centro */
 }
 
+/* Estilos para a imagem dentro de aside2 */
 .aside-image img {
   max-width: 100%;
-  border-radius: var(--main-radius);
-  border: 3px solid black;
-  height: 65%;
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  border: 3px solid black; /* Borda preta com 3px de espessura */
+  height: 65%; /* Altura da imagem */
 }
 
 /* Estilos para a seção content6 sobre comida */
 .content6 {
-  grid-area: content6;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-area: content6; /* Define a área ocupada pela seção no grid */
+  display: grid; /* Aplica um display de grid para organizar os elementos internos */
+  grid-template-columns: 1fr 1fr; /* Cria duas colunas com largura igual */
+  grid-gap: 20px; /* Espaçamento entre as células do grid */
   background-color: rgb(145, 144, 144);
-  padding: 20px;
+  padding: 20px; /* Preenchimento interno */
   border-radius: var(--main-radius);
-  margin-top: 20px;
+  margin-top: 20px; /* Margem superior */
 }
 
+/* Estilos para a seção de imagem de comida */
 .food-image {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Exibe os elementos em uma linha */
+  flex-direction: column; /* Organiza os elementos em coluna */
 }
 
+/* Estilos para imagens de comida */
 .food-image img {
-  max-width: 100%;
-  margin-bottom: 10px;
-  border-radius: var(--main-radius);
-  border: 3px solid black;
+  max-width: 100%; /* Limita a largura máxima da imagem ao contêiner */
+  margin-bottom: 10px; /* Espaçamento inferior entre imagens */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  border: 3px solid black; /* Borda sólida de 3px */
 }
 
+/* Estilos para o conteúdo de comida */
 .food-content {
-  text-align: justify;
+  text-align: justify; /* Alinha o texto justificado */
 }
 
+/* Estilos para títulos no conteúdo de comida */
 .food-content h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Espaçamento inferior entre títulos e parágrafos */
 }
 
 .food-content p {
   color: #ffffff;
-  font-size: 16px; /* Aumenta o tamanho da fonte */
-  line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+  font-size: 16px;
+  /* Aumenta o tamanho da fonte */
+  line-height: 1.5;
+  /* Espaçamento entre linhas para melhor legibilidade */
 }
 
 /* Estilos para o rodapé */
 footer {
-  background-color: rgb(145, 144, 144);
-  grid-area: footer;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-
+  background-color: rgb(145, 144, 144); /* Cor de fundo do rodapé */
+  grid-area: footer; /* Área da grade ocupada pelo rodapé */
+  border-radius: var(--main-radius); /* Raio de borda personalizado */
+  padding-top: var(--main-padding); /* Preenchimento personalizado no topo */
 }
 
+/* Estilos para as colunas dentro do rodapé */
 .columns {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 100px;
-  margin-bottom: 15px;
+  display: flex; /* Exibe os itens em linha */
+  justify-content: space-between; /* Espaçamento uniforme entre os itens */
+  padding-right: 100px; /* Espaçamento à direita */
+  margin-bottom: 15px; /* Margem inferior */
   font-size: 20px;
 }
 
-.first-column, .second-column, .third-column {
-  display: flex;
-  text-align: start;
+/* Estilos para as colunas individualmente */
+.first-column,
+.second-column,
+.third-column {
+  display: flex; /* Exibe os itens em linha */
+  text-align: start; /* Alinhamento do texto à esquerda */
 }
 
-
+/* Estilos para listas não ordenadas */
 ul {
-  list-style: none;
-  padding: 10px 20px;
+  list-style: none; /* Remove marcadores de lista */
+  padding: 10px 20px; /* Preenchimento interno */
 }
 
+/* Estilos para a terceira coluna e suas listas */
 .third-column ul {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  padding-right: 50px;
+  display: flex; /* Exibe os itens em coluna */
+  gap: 20px; /* Espaçamento entre itens */
+  flex-direction: column; /* Alinhamento em coluna */
+  padding-right: 50px; /* Espaçamento à direita */
 }
 
+/* Estilos para a linha de texto no rodapé */
 .row-footer {
-  display: flex;
-  justify-content: center;
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza horizontalmente */
   font-size: 12px;
 }
-
