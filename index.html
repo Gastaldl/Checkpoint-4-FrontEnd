@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <nav class="menu">
-        <div class="logo">Sobre Cats...</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" /> <!-- Link para o arquivo de estilo CSS -->
+  <title>Document</title>
+</head>
 
-        <ul class="menu-items">
-          <li><a href="#">Maine Coon</a></li>
-          <li><a href="#">Angorá</a></li>
-          <li><a href="#">Ragdoll</a></li>
-        </ul>
+ <!-- Botão que leva o usuário de volta para o topo da página -->
+ <button id="scrollToTopButton" onclick="scrollToTop()">Topo</button>
 
-        <div class="search-bar">
-          <input type="text" placeholder="Buscar" />
-          <button type="submit">Buscar</button>
-        </div>
-      </nav>
-      <main>
-        <img class="gato-main" src="./images/gato1.jpg" alt="Gato Header">
-      </main>
+ <script>
+   // Função JavaScript para rolar suavemente para o topo da página
+   function scrollToTop() {
+     window.scrollTo({
+       top: 0,
+       behavior: 'smooth' // Rola suavemente para o topo
+     });
+   }
+ </script>
 
-      <aside>
-        <img class="gato-aside" src="./images/gato5.jpg" alt="">
-        <h3>Gatinhos</h3>
-        <h5>Mande um e-mail ツ</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet sed lacus mattis cursus. Phasellus vel rhoncus odio. Nunc vehicula orci eget eros condimentum, sed mollis velit elementum. Morbi pretium mauris sit amet justo lobortis pellentesque. Praesent at finibus libero. Cras elementum sem eu malesuada ornare.</p>
+<body>
+  <div class="container">
+    <nav class="menu">
+      <div class="logo">Sobre Cats...</div>
+
+      <ul class="menu-items">
+        <li><a href="#">Ínico</a></li>
+        <li><a href="#main2">Fatos</a></li>
+        <li><a href="#content6">Rações</a></li>
+      </ul>
+
+    </nav>
+    <main class="mian1">
+      <img class="gato-main" src="./images/gato1.jpg" alt="Gato Header">
+    </main>
+
+    <aside class="aside1">
+      <img class="gato-aside" src="./images/gato5.jpg" alt="">
+      <h3>Gatinhos</h3>
+      <h5>Mande um e-mail ツ</h6>
+        <p>Bem-vindo ao fascinante mundo dos gatos! Aqui, celebramos a graça e a curiosidade desses adoráveis felinos
+          que conquistaram nossos corações. Nossa paixão por gatos vai além das palavras, e estamos dedicados a
+          compartilhar histórias e conhecimentos sobre essas criaturas incríveis.
+        <p>Descubra fatos fascinantes, explore raças, aprenda sobre cuidados e nutrição, e mergulhe no universo
+          encantador dos gatos conosco. Nossa missão é tornar a vida dos gatos e de seus cuidadores mais feliz e
+          saudável. Junte-se a nós nessa jornada felina!</p>
+        </p>
         <div class="icon-medias">
           <img class="icons" src="./images/facebook-icon.png" alt="">
           <img class="icons" src="./images/youtube-icon.png" alt="">
@@ -39,41 +55,103 @@
           <img class="icons" src="./images/instagram-icon.png" alt="">
           <img class="icons" src="images/git-icon.png" alt="">
         </div>
-      </aside>
+    </aside>
 
-      <section id="content1"><img class="gato-content" src="./images/gato2.jpeg" alt=""></section>
-      <section id="content2"><img class="gato-content" src="./images/gato3.jpg" alt=""></section>
-      <section id="content3"><img class="gato-content" src="./images/gato4.jpg" alt=""></section>
+    <section id="content1"><img class="gato-content" src="./images/gato2.jpeg" alt=""></section>
+    <section id="content2"><img class="gato-content" src="./images/gato3.jpg" alt=""></section>
+    <section id="content3"><img class="gato-content" src="./images/gato4.jpg" alt=""></section>
 
-      <footer>
-        <div class="columns">
-          <div class="first-column">
-            <ul>
-              <li>Raças</li>
-              <li>Rações</li>
-              <li>Competições</li>
-              <li>Habilidades</li>
-              <li>Adote um Gato</li>
-            </ul>
-          </div>
-          <div class="second-column">
-            <ul>
-              <li>Dicas</li>
-              <li>Rank de inteligência</li>
-              <li>Curiosidades</li>
-            </ul>
-          </div>
-          <div class="third-column">
-            <ul>
-              <li>gatoslindos@gmail.com</li>
-              <li>Telefone: (19) 99999-99999</li>
-            </ul>
-          </div>
+    <main id="main2" class="mian2">
+      <img class="gato-main2" src="./images/catheader2.jpg" alt="Gato Header">
+    </main>
+
+    <section class="content4">
+      <h2>Fatos Interessantes sobre Gatos</h2>
+      <ul>
+        <li>Gatos têm cerca de 32 músculos em cada orelha, permitindo que eles girem suas orelhas 180 graus.</li>
+        <li>Os gatos passam cerca de 70% de suas vidas dormindo.</li>
+        <li>O gato mais velho registrado tinha 38 anos de idade.</li>
+        <li>Gatos têm impressões digitais únicas, assim como os humanos.</li>
+      </ul>
+    </section>
+
+    <section class="content5">
+      <h2>Mais Fatos sobre Gatos</h2>
+      <ul>
+        <li>Gatos têm a habilidade de pular até seis vezes a altura do corpo.</li>
+        <li>Os gatos têm um campo de visão de cerca de 200 graus.</li>
+        <li>O ronronar dos gatos pode ter efeitos calmantes em humanos.</li>
+        <li>Gatos têm preferências musicais e podem gostar de música calma e clássica.</li>
+      </ul>
+    </section>
+
+
+    <aside class="aside2">
+      <div class="aside-content">
+        <h3>Conheça Nossos Amigos Peludos</h3>
+        <p>
+          Descubra mais sobre as raças de gatos mais populares e aprenda sobre suas personalidades, necessidades especiais e características únicas. Cada raça tem sua própria história e encanto distinto.
+        </p>
+      </div>
+      <div class="aside-image">
+        <img src="./images/cutecat.jpg" alt="Gato Fofo">
+      </div>
+    </aside>
+
+    <section id="content6" class="content6">
+      <div class="food-image">
+        <img src="./images/food1.jpg" alt="Comida para Gatos">
+      </div>
+      <div class="food-content">
+        <h2>Comida para Gatos</h2>
+        <p>Uma alimentação equilibrada é fundamental para a saúde e o bem-estar do seu gato. Descubra dicas sobre os tipos de comida mais adequados, como criar uma dieta balanceada e oferecer opções saborosas para seu felino.</p>
+        <p>A variedade de alimentos para gatos é ampla, e a escolha certa pode influenciar na energia, vitalidade e longevidade do seu companheiro felino. Além disso, lembre-se sempre de manter água fresca disponível.</p>
+      </div>
+    </section>
+    
+
+    <footer>
+      <div class="columns">
+        <div class="first-column">
+          <ul>
+            <li>Raças</li>
+            <li>Rações</li>
+            <li>Competições</li>
+            <li>Habilidades</li>
+            <li>Adote um Gato</li>
+          </ul>
         </div>
-          <div class="row-footer">
-            <p>©2023 Sobre Gatos. Todos os direitos reservados.</p>
-          </div>
-      </footer>
-    </div>
-  </body>
+        <div class="second-column">
+          <ul>
+            <li>Dicas</li>
+            <li>Rank de inteligência</li>
+            <li>Curiosidades</li>
+          </ul>
+        </div>
+        <div class="third-column">
+          <ul>
+            <li>gatoslindos@gmail.com</li>
+            <li>Telefone: (19) 99999-99999</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-footer">
+        <p>©2023 Sobre Gatos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Adiciona uma classe ao corpo quando a página é rolada
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 100) {
+        document.body.classList.add('scrolled');
+      } else {
+        document.body.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+
 </html>
