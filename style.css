@@ -195,7 +195,7 @@ body.scrolled #scrollToTopButton {
 }
 
 /* Estilos para a segunda seção principal */
-.mian2 {
+.banner2 {
   grid-area: banner; /* A seção ocupa a área 'banner' na grade */
   border-radius: var(--main-radius); /* Raio de borda personalizado */
   padding-top: var(--main-padding); /* Preenchimento personalizado no topo */
