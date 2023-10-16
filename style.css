@@ -182,8 +182,8 @@ body.scrolled #scrollToTopButton {
   display: none;
 }
 
-.btn-secondary:hover {
-  background-color: #2d2d2d;
+.btn-secondary {
+  background-color: #212121;
 }
 
 /* Estilos para a seção principal do cabeçalho */
